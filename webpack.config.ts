@@ -1,6 +1,7 @@
-const path = require('path');
+import * as path from 'path';
+import { Configuration } from 'webpack';
 
-module.exports = {
+const config: Configuration = {
   entry: './src/index.tsx',
   devtool: 'inline-source-map',
   module: {
@@ -29,3 +30,5 @@ module.exports = {
     historyApiFallback: true,
   },
 };
+
+export default config;
